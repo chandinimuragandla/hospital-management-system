@@ -1,23 +1,20 @@
-import logo from './logo.svg';
+import React,{useState} from 'react';
+import DoctorList from './Components/DoctorList';
+import PatientList from './Components/PatientList';
+import AppointmentForm from './Components/AppointmentForm';
+
 import './App.css';
 
-function App() {
+const App = ()=> {
+  const [selectedDoctor ,setselectedDoctor]= useState(null);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1> Hospital Management System</h1>
+      <div style ={{display: 'flex' ,gap: '20px'}}>
+        <DoctorList onSelectDoctor={setselectedDoctor} />
+          {selectedDoctor && <AppointmentForm selectedDoctor={selectedDoctor}/>}
+      </div>
+     <PatientList />
     </div>
   );
 }

@@ -1,0 +1,57 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr.james",
+      "Specialization": "cardialogy"
+    },
+    {
+      "id": "2",
+      "name": "Dr.Smith",
+      "Specialization": "Neurology"
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "name": "John",
+      "appointment": "Dr.Smith"
+    },
+    {
+      "id": "acf1"
+    },
+    {
+      "id": "e293"
+    },
+    {
+      "id": "adb1"
+    },
+    {
+      "id": "39c3"
+    },
+    {
+      "id": "2604"
+    },
+    {
+      "id": "8959"
+    },
+    {
+      "id": "8e81"
+    },
+    {
+      "id": "d9cb"
+    },
+    {
+      "id": "161e"
+    },
+    {
+      "id": "6aee"
+    },
+    {
+      "id": "4828"
+    },
+    {
+      "id": "df56"
+    }
+  ]
+}
